@@ -7,7 +7,7 @@ def start():
     scheduler = BackgroundScheduler(timezone=settings.TIME_ZONE)
 
     # https://apscheduler.readthedocs.io/en/master/userguide.html#combining-multiple-triggers
-    @scheduler.scheduled_job('cron', minute='*/1', name='me')
+    # @scheduler.scheduled_job('cron', minute='*/1', name='me')
     def job():
         from .scraper import scraper
         scraper()
