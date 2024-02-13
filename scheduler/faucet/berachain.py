@@ -7,12 +7,10 @@ from system.client.discord.faucet_discrod_client import FaucetDiscordClient
 
 
 def faucet_berachain_job() -> None:
-    print("berachain-faucet")
-
-    FAUCET_URL = "https://artio.faucet.berachain.com/"
+    print("faucet-berachain")
 
     driver = webdriver.Chrome()
-    driver.get(url=FAUCET_URL)
+    driver.get(url="https://artio.faucet.berachain.com/")
     time.sleep(2)
 
     local_storage = LocalStorage(driver)
@@ -31,7 +29,7 @@ def faucet_berachain_job() -> None:
     # drip_button = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/main/div/div[1]/div/button')
     # drip_button.click()
 
-    FaucetDiscordClient().send_message({'content': 'berachain-faucet has been claimed'})
+    FaucetDiscordClient().faucet_done('berachain')
 
     time.sleep(5)
     driver.quit()

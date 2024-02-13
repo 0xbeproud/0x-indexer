@@ -10,6 +10,7 @@ class SchedulerConfig(AppConfig):
     def ready(self):
         super().ready()
         if os.environ.get('RUN_MAIN', None) != 'true':
+            print("APP STARTED!!!")
             from scheduler import jobs
             jobs.start()
 
