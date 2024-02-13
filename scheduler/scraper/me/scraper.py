@@ -27,7 +27,7 @@ url = 'https://api-mainnet.magiceden.io/v2/ord/btc/collections/oracles'
 
 
 def scraper() -> None:
-    # print("me_scraper")
+    print("scraper_me")
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         print("It's a successful Get requested")

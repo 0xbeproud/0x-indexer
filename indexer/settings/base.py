@@ -22,6 +22,7 @@ SECRET_KEY = '!WSLUSpU=nurMQ^cky4JgeWZF[P<OGdP1X5^=49xH.^Cb<4UB='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+PHASE = "base"
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -38,10 +39,13 @@ INSTALLED_APPS = [
     'django_apscheduler',
     'rest_framework',
 
-    'scheduler.apps.SchedulerConfig',
-
     "api.apps.ApiConfig",
     "api.collections.apps.CollectionsConfig",
+
+    'scheduler.apps.SchedulerConfig',
+
+    'system.apps.SystemConfig',
+    'system.client.apps.ClientConfig',
 ]
 
 MIDDLEWARE = [

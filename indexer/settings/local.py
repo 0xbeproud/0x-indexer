@@ -1,7 +1,9 @@
 from .base import *
 
+print(BASE_DIR)
 PHASE = 'local'
 DEBUG = True
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+ALLOWED_HOSTS = []
+
 
