@@ -1,5 +1,4 @@
 import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -7,7 +6,7 @@ from scheduler.utils.local_storage import LocalStorage
 from system.client.discord.faucet_discrod_client import FaucetDiscordClient
 
 
-def faucet() -> None:
+def faucet_berachain_job() -> None:
     print("berachain-faucet")
 
     FAUCET_URL = "https://artio.faucet.berachain.com/"
