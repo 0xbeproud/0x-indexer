@@ -7,9 +7,9 @@ from scheduler.utils.local_storage import LocalStorage
 from system.client.discord.faucet_discrod_client import FaucetDiscordClient
 
 
-def faucet_berachain_job() -> None:
-    WALLET_ADDRESS = '0xB243b7a98C305fA5866c008d1B0452A474d8c398'
-    print("faucet-berachain")
+def faucet_berachain_job_sapo() -> None:
+    WALLET_ADDRESS = '0xD565098fE75a1b05270d090419c5e74d8F083cA9'
+    print("faucet-berachain-sapo")
 
     options = webdriver.ChromeOptions()
     options.add_argument('headless')

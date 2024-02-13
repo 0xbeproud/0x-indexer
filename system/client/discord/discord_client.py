@@ -10,5 +10,5 @@ class DiscordClient:
     def send_message(self, payload):
         return requests.post(self.web_hook_url, json=payload)
 
-    def faucet_done(self, name):
-        return self.send_message({'content': f'[{pendulum.now().format("YYYY-MM-DD HH:mm:ss")}][{name}] has been claimed.'})
+    def faucet_done(self, wallet_address, name):
+        return self.send_message({'content': f'[{pendulum.now().format("YYYY-MM-DD HH:mm:ss")}][{name}] has been claimed to {wallet_address}'})
