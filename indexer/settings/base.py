@@ -24,7 +24,7 @@ SECRET_KEY = '!WSLUSpU=nurMQ^cky4JgeWZF[P<OGdP1X5^=49xH.^Cb<4UB='
 DEBUG = False
 PHASE = "base"
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0']
 
 # Application definition
 
